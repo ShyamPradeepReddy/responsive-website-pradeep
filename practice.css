@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.web {
+    display: flex;
+}
+
+.nav {
+    display: block;
+    background-color: white;
+    width: 2.5vw;
+    height: 90vh;
+}
+
+.screen1, .screen2, .screen3 {
+    min-height: 90vh;
+}
+
+.screen1 {
+    background-color: rgb(240, 244, 249);
+    width: 22vw;
+}
+
+.screen2 {
+    background-color: white;
+    width: 50vw;
+}
+
+.screen3 {
+    background-color: white;
+    width: 22vw;
+}
+
+.web .nav img {
+    width: 20px;
+    padding: 10px 4px;
+}
+
+.web .nav img:hover {
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.web .nav .nav1 {
+    margin: 0 0 25px 0;
+}
+
+.web .nav .nav2 {
+    margin: 0 0 45vh 0;
+}
+
+.web.nav {
+    margin-left: 10px;
+}
+
+.screen1 .scr .inner1 img {
+    width: 80px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.screen1 .scr .inner1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.screen1 .scr {
+    margin: 20px 20px;
+    background-color: rgb(240, 244, 249);
+}
+
+.screen1 .scr .inner {
+    padding: 12px 0;
+}
+
+.screen1 .scr .button {
+    width: 90px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+}
+
+.screen1 .scr .inner h2,
+.screen1 .scr .inner h3 {
+    font-size: 15px;
+}
+
+.screen2 h2,
+.screen2 h3 {
+    font-size: 16px;
+}
+
+.screen2 .in b {
+    color: blue;
+}
+
+.screen2 .scr2 {
+    margin: 50px 50px;
+}
+
+.screen2 .scr2 .in {
+    margin-bottom: 30px;
+}
+
+.screen2 .scr2 .in2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.screen2 .scr2 .in2 .f1 {
+    margin: 0 5px;
+    width: 250px;
+}
+
+.screen2 .scr2 .in2 .f1 hr {
+    color: blue;
+}
+
+.screen2 .scr2 img {
+    width: 500px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+.screen2 .scr2 h3,
+.screen2 .scr2 p {
+    margin-bottom: 5px;
+}
+
+.screen2 .scr2 .in3 .f {
+    display: block;
+    margin: 3px;
+}
+
+.screen2 .scr2 .in3 {
+    display: flex;
+}
+
+.screen2 .scr2 .in3 .in1 {
+    margin-bottom: 25px;
+}
+
+.screen2 .scr2 .in3 img {
+    width: 400px;
+    height: 120px;
+    margin-left: 60px;
+}
+
+.screen2 .scr2 .in3 .in1 hr {
+    margin-top: 5px;
+}
+
+.screen3 h2,
+.screen3 h3 {
+    padding: 5px 0;
+}
+
+.screen3 .insides .ine .hi progress,
+.screen3 .insides .ine p {
+    display: inline-block;
+}
+
+.screen3 .insides .ine .hi progress {
+    color: blue;
+}
+
+.screen3 .insides .ine .hi h3,
+.screen3 .insides .ine .hi h2 {
+    display: inline-block;
+}
+
+.screen3 .insides .ine .hi h2 {
+    margin-left: 1px;
+}
+
+.screen3 .insides .ine .hi {
+    margin-top: 6px;
+}
+
+.screen3 .insides .ine .button {
+    margin-left: 30px;
+    height: 30px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 5px;
+}
+
+.screen3 .insides .ine a {
+    margin-left: 40px;
+    padding-top: 10px;
+    font-style: normal;
+}
+
+.screen3 .insides .ine .button1 {
+    margin-top: 10px;
+}
+
+.screen3 .insides .ine {
+    margin: 30px 50px;
+    background-color: rgb(240, 244, 249);
+    border-radius: 15px;
+}
+
+.screen3 .ine2 {
+    display: flex;
+    margin: 30px 25px;
+}
+
+.screen3 .ine2 .line {
+    width: 3px;
+    background-color: blue;
+    margin-right: 15px;
+}
+
+.screen3 .insides .no {
+    background-color: rgb(240, 244, 249);
+    margin: 30px 25px;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 480px) {
+    .web {
+        flex-direction: column;
+    }
+
+    .nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 8vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .screen1, .screen2, .screen3 {
+        width: 100%;
+        min-height: auto;
+        border-radius: 0;
+    }
+
+    .screen1 .scr, .screen2 .scr2, .screen3 .insides .ine, .screen3 .insides .no {
+        margin: 20px;
+    }
+    .web .nav .nav2{
+        margin: 0;
+        
+    }
+    .web .nav .nav1{
+        margin-top: 30px;
+    }
+    .web .nav .nav2 a{
+        margin: 0 15px;
+    }
+    .web .nav .nav1 a{
+        margin: 0 10px;
+    }
+    .web .nav .nav1 a{
+        margin: 0 15px;
+    }
+    .screen2 .in3{
+        display: block;
+    }
+    
+
+}
+
+      
